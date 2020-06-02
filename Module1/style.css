@@ -1,0 +1,104 @@
+h1 {
+	font-size: 60px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: #0bd8a2;  /* Fuchsia */
+	text-shadow: 3px 3px 1px black;
+}
+body {
+    background-color: white;
+  }
+
+h2{
+    text-align: center;
+}
+
+column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.row {
+    display: flex;
+  }
+
+  img{
+    text-align: center;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  table{
+    width: 1000px;
+    /* border:1px solid black */
+  }
+
+  form{
+    /* width: 1000px; */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  div.form{
+    display: block;
+    text-align: center;
+    background-color: #f2f2f2
+    /* border: black; */
+    /* border-radius: 5px;
+    
+    padding: 20px; */
+    width: 100%
+    
+
+  }
+  
+  input[type=text],select{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  div.Q1,div.Q2, div.Q3{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 800px;
+    
+
+  }
+  div.TopBar{
+    height: 100px;
+    background-color:#343434
+  }
+  
+
