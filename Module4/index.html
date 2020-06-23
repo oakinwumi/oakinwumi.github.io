@@ -16,6 +16,7 @@
 
     <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
@@ -33,95 +34,78 @@
     <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
     <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
     <div class="container-md p-3 my-3 border bg-dark text-white">
-        <h1>Welcome to Cool Cuts</h1>
-        <p>Never a bad hair day!</p>
+        <h1> Welcome to Cool Cuts  <img src="images/logo.png" alt="" width="150" height="150">  </h1>
+       
+       
+            
+
+          <div class="row p-3">
+            <div class="col-sm-3 pl-5" href="#AboutUs"> About Us</div>
+            
+            <div class="col-sm-3">Services</div>
+            <div class="col-sm-3">Book Now</div>
+            <div class="col-sm-3">Where to find us</div>
+        </div>
+    
+    </div>
+
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Due to COVID 19 Restrictions, we will not be taking walk-in clients until further notice. Book your appointment now!</strong>
+        </div>
     </div>
 
     <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
     <!-- It can be useful for placement of information -->
-    <div class="row p-3">
-        <div class="col-sm-3 pl-5">Service</div>
-        <div class="col-sm-3">Calendar</div>
-        <div class="col-sm-3">Payment</div>
-        <div class="col-sm-3">Where to find us</div>
-    </div>
+    
 
+
+    
     <!-- When you have messages to tell, remember that center align is not always the best choice -->
-    <div class="container-md p-3 my-3 border bg-light text-success">
-        <h3>Let us tell you about our expertise</h3>
-        <p>We can <mark>cut hair</mark></p>
-        <p class="text-center" >Align wheels</p>
-        <p class="text-uppercase">Write in uppercase</p>
-        <p class="text-center text-uppercase" >centered and uppercase</p>
+    <div class="container-md p-3 my-3 border bg-light text-body">
+        <h2 id="AboutUs"> About us</h2>
+       
+        <p> 
+            CoolCuts is a family oriented unisex salon that is dedicated to providing the best customer service to our clients while getting their hair needs. With pleasant conversation and a relaxing environment, you’ll enjoy your next haircut, style or shave when you come to our salon! Our team of skilled barbers and hairstylist are dedicated to providing the satisfaction that our clients deserve.
+        </p>
     </div>
 
 
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
-    <div class="container">
-        <h2>Service description</h2>
-        <p>Here is a list of services offered</p>            
-        <table class="table table-primary table-hover">
-            <thead>
-            <tr>
-                <th>Service</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Haircut</td>
-                <td>Bla bla</td>
-            </tr>
-            <tr>
-                <td>Drying</td>
-                <td>Bla bla</td>
-            </tr>
-            <tr>
-                <td>Coloring</td>
-                <td>Bla bla</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    
 
 
     <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
     <!-- These can be useful for making sure someone reads something before continuing -->
-    <div class="container">
-        <h2>Alert</h2>
-        <p>We have something important to say</p>
-        <div class="alert alert-danger alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Please read! </strong>You must read.
-        </div>
-    </div>
+    
 
     <!-- You'll certainly need buttons at some point in your site -->
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
     <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
     <!-- This idea is already part of the components in Bootstrap -->
-    <div class="container">
+    <!-- <div class="container">
         <h2>Button States</h2>
         <button type="button" class="btn btn-warning">Primary Button</button>
         <button type="button" class="btn btn-warning active">Active Primary</button>
         <button type="button" class="btn btn-warning" disabled>Disabled Primary</button>
-    </div>
+    </div> -->
 
 
     <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
     <!-- Modals are useful for additional information or questions -->
     <!-- Here the modal is used for a little survey -->
-    <div class="container">
-        <h2>Modal Example</h2>
+    <!-- <div class="container"> -->
+        <!-- <h2>Modal Example</h2> -->
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
+        <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button> -->
           
         <!-- Modal -->
-        <div class="modal fade" id="mySurvey" role="dialog">
-            <div class="modal-dialog">  
+        <!-- <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">   -->
             <!-- Modal content-->
-            <div class="modal-content">
+            <!-- <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -145,7 +129,7 @@
             </div>     
         </div>
         </div>    
-    </div>
+    </div> -->
 
     <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
     <!-- Card columns allows multiple cards next to each other -->
@@ -155,55 +139,83 @@
         <h2>Meet our hairdressers</h2>
         <div class="card-columns">
             <div class="card bg-warning" style="width:200px">
-                <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="images/andre.jpg" alt="Card image" style="width:100%" height="263 px" >
                 <div class="card-body">
-                    <h4 class="card-title">Jules</h4>
-                    <p class="card-text">Jules has been cutting hair for 10 years.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <h4 class="card-title">Andre</h4>
+                    <p class="card-text">The Fade Master</p>
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse" >See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p> Andre has mastered the perfect fade. </p>
+                    </div>
                 </div>
             </div>
             <div class="card bg-danger" style="width:200px">
-                <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="images/Obi.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">Jules</h4>
-                    <p class="card-text">The curly hair specialist</p>
+                    <h4 class="card-title">Obi</h4>
+                    <p class="card-text">Curly hair specialist</p>
                     <!-- collapsible part -->
                     <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
                     <div id="profile" class="collapse p-3">
-                        <p>Jules has been cutting hair for 10 years ... </p>
+                        <p>Obi is a master a working with hair of all textures. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-info" style="width:200px">
+                <img class="card-img-top" src="images/Jose.jpg" alt="Card image" style="width:100%" height="263px">
+                <div class="card-body">
+                    <h4 class="card-title">Jose</h4>
+                    <p class="card-text">Experienced One</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Jose has been cutting hair for 10 years.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <!-- A different approach would be to make the whole staff information collapsible -->
-    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
-    <!-- Here a single card is used, but card columns could be used -->
     <div class="container">
-        <h2>More information</h2>
-        <a href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our mechanics</a>
-        <div id="mechanics" class="collapse">
-            <div class="card bg-warning" style="width:200px">
-                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Erwind</h4>
-                    <p class="card-text">Erwind knows all about bikes.</p>
-                </div>
-            </div>
-        </div>
+        <h2>Service description</h2>
+        <p>Here is a list of services offered</p>            
+        <table class="table table-primary table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Mens's Cut</td>
+                <td>From Waves to Fades, Fohawks to Caesars, and anything in between. Keep it clean & perfectly tailored to you.</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>Ladies Cut</td>
+                <td>Want it short? Tired of damaged hair? tired of weaves? braiding? Just want a trim? Desire a fresh do, then this service is for you.</td>
+                <td>$27</td>
+            </tr>
+            <tr>
+                <td>Kids Cut</td>
+                <td>We love children and yes we also have and show patience! </td>
+                <td>$20</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
+
+
+
 
     <!-- Collapsible with multiple items - accordion -->
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container">
-        <div class="container-md p-3 my-3 border bg-warning text-white">
-            <h1>Erwind's and friends bike shop</h1>
-            <p>Bike fixing is our business</p>
-        </div>
+        <h2>Ready to Book?</h2>
         <div id="accordion">
             <div class="card">
                 <div class="card-header">
@@ -211,7 +223,15 @@
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Here is our list of services</p>
+                        <div class="form-group">
+                            <label for="sel1">Pick A Service:</label>
+                            <select class="form-control" id="sel1">
+                              <option>Men's Cut</option>
+                              <option>Womens's Cut/option>
+                              <option>Texturize</option>
+                            </select>
+                          </div>
+                        
                     </div>
                 </div>
             <div class="card">
@@ -220,7 +240,6 @@
                 </div>
                 <div id="collapseDate" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>What date?</p>
                         <!-- Bootstrap has various input components. Some examples are given here: -->
                         <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
                         <div class="form-group row">
@@ -239,11 +258,57 @@
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <p>Your information so we can contact you</p>
-                        <p>Form to enter name, email, phone</p>
+                        <form>
+                           
+                            <div class="form-group">
+                              <label for="Name">Name:</label>
+                              <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="Number">Phone Number:</label>
+                                <input type="text" class="form-control" placeholder="Enter Number" id="number">
+                            </div>
+
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <br>
+        <h2>Where to find us</h2>
+        <p> <img id="location" src="images/location.png" alt="" height="200px" width="200px"> 75 Laurier Ave E, Ottawa, ON K1N 6N5 <br> (613) 562-5700 <br> coolcuts@gmail.com <br>
+            <table class="dates">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td> Monday-Friday</td>
+                        <td>9am-5pm</td>
+                    </tr>
+                    <tr>
+                        <td> Saturday</td>
+                        <td>9am-4pm</td>
+                    </tr>
+                    <tr>
+                        <td> Sunday</td>
+                        <td>9am-1pm</td>
+                    </tr>
+                </tbody>
+                
+                
+
+
+            </table>
+           
+    </p>
+        
     </div>
 
 </body>
