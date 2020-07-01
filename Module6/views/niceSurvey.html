@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+	
+	<div class="container-md p-3 my-3 border bg-light text-black" id="survey">
+    <h1>Survey</h1>
+    <p>On this site we will be reviewing Uottawa'S Landing page</p>
+    <label for="LINK">Click here to view the landing page</label>
+    <a href="https://www.uottawa.ca/en"><button id="LINK">Click Me</button></a>
+    <form id="Survey" method="POST" action="action.js"> 
+      <h3> Enter your Personal Information</h3>
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="name" ><br>
+      <label for="lname">Last name:</label> <br>
+      <input type="text" id="lname">
+      <h2> Are you a uOttawa student/faculty member?</h2>
+      <input type="radio" name="uottawaS" id="yes" value="UOTTAWA FACULTY/STUDENT" >
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="No" name="uottawaS" value="NON-UOTTAWA FACULTY/STUDENT">
+      <label for="no">No</label><br>
+      <h3> Choose your favourite color on this Website:</h3>
+      <select name="color" id="colors">
+          <option value="Red">Red</option>
+          <option value="White">White</option>
+          <option value="Black">Black</option>
+      </select>
+
+      <h3> Choose your favourite component(s) about this website's UI:</h3>
+      <input type="checkbox" id="Color scheme" name="uicomponent" value="Color scheme"  >
+      <label for="Color scheme"> Color scheme</label><br>
+      <input type="checkbox" id="Icons" name="uicomponent" value="Icons" >
+      <label for="Icons"> The icons</label><br>
+      <input type="checkbox" id="Top Bar" name="uicomponent" value= "TopBar">
+      <label for="Top Bar"> The Top Bar</label><br><br>
+
+      <h3>Do you find the background picture distracting?</h3>
+      <input type="radio" id="strongly agree" name="picture" value="Strongly agree">
+      <label for="strongly agree">Strongly agree</label><br>
+
+      <input type="radio" id="agree" name="picture" value="Agree">
+      <label for="agree">Agree</label><br>
+
+      <input type="radio" id="disagree" name="picture" value="Disagree">
+      <label for="disagree">Disagree</label><br>
+
+      <input type="radio" id="stongly disagree" name="picture" value="Strongly Disagree">
+      <label for="strongly disagree">Strongly disagree</label><br>
+
+      <h3>What would you rate the UOTTAWA SITE FROM 1-5</h3>
+      <label for="Rate">Rate (between 1 and 5):</label>
+      <input type="number" id="Rate" name="rate" min="1" max="5">
+      <h3>Finally comment on any areas the webiste could improve on:</h3>
+                        <textarea id="comments" rows="4" cols="50">
+                        
+                        </textarea>
+      
+    
+      <br>
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 

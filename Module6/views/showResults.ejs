@@ -1,0 +1,55 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h3> Names of Users Participating</h3>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].name%></li>
+    <% } %>    
+    </ul>
+
+    <h3>Amount of UOTTAWA STUDENT/FACULTY</h3>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].uottawaS %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+
+    <h3>Favourite Colour on website</h3>
+    <ul>
+        <% for (var i=0; i<results[1].length; i++){ %>
+            <li><%= results[1][i].color %> :  <%= results[1][i].count %></li>
+        <% } %>    
+        </ul>
+
+    
+    <h3>Favourite UI component</h3>
+    <ul>
+            <% for (var i=0; i<results[2].length; i++){ %>
+                <li><%= results[2][i].uicomponent %> :  <%= results[2][i].count %></li>
+            <% } %>    
+    </ul>
+
+    <h3>People that found background picture distracting</h3>
+    <ul>
+        <% for (var i=0; i<results[3].length; i++){ %>
+            <li><%= results[3][i].picture %> :  <%= results[3][i].count %></li>
+        <% } %>    
+    </ul>
+
+    <h3>UOTTAWA SITE RATED FROM 1-5</h3>
+    <ul>
+        <% for (var i=0; i<results[4].length; i++){ %>
+            <li><%= results[4][i].rate %> :  <%= results[4][i].count %></li>
+        <% } %>    
+    </ul>
+
+   
+
+    <!--  -->
+</body>
+</html>
